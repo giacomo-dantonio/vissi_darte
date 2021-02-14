@@ -1,2 +1,3 @@
-# vissi_darte
+# Vissi d'arte
+
 An interactive CV/Resumé in React
