@@ -1,3 +1,3 @@
 # Vissi d'arte
 
-An interactive CV/Resumé in React
+A CV/Resumé in plain HTML.
