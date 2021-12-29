@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.card a,
+h2 a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.card {
+  color: rgba(255, 255, 255, 0.8);
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.bigme {
+  background-image: url('img/cover.jpg');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: cover !important;
+}
+
+.navbar {
+  text-align: right;
+}
+
+.navbar a {
+  padding: 1rem 2rem;
+}
+
+.content {
+  text-align: center;
+}
+
+.socials i {
+  margin-right: 3vw;
+}
+
+.navbar a.download {
+  border-style: solid;
+  border-width: 1px;
+}
+
+section {
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 300;
+  text-align: justify;
+}
+
+section h1,
+section h2,
+section h3,
+section h4 {
+  color: #00449e;
+}
+
+.technologies {
+  line-height: 2.5rem;
+}
+
+.technologies > span {
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+table.experience th {
+  width: 20%;
+  text-align: left;
+}
+
+table.experience th,
+table.experience td {
+  vertical-align: baseline;
+}
+
+h2:not(:hover) a.section-link {
+  visibility: hidden;
+}
+
+@media (orientation: landscape) {
+  .content {
+    float: right;
+    width: 60vw;
+  }
+
+  h1 {
+    font-size: 4vw;
+  }
+  
+  h2 {
+    font-size: 3vw;
+  }
+  
+  h3 {
+    font-size: 2vw;
+  }
+
+  h4 {
+    font-size: 1.5vw;
+  }
+
+  .socials {
+    font-size: 3vw;
+  }
+
+  section {
+    width: 80vw;
+  }
+}
+
+@media (orientation: portrait) {
+  h1 {
+    font-size: 8vw;
+  }
+
+  h2 {
+    font-size: 6vw;
+  }
+
+  h3 {
+    font-size: 4vw;
+  }
+
+  h4 {
+    font-size: 2vw;
+  }
+
+  .socials {
+    font-size: 5vw;
+  }
+}
+
