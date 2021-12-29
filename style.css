@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 0 2rem;
 
   font-family: 'Roboto', sans-serif;
 }
@@ -72,13 +72,17 @@ section h4 {
   border-width: 1px;
 }
 
-table.experience th {
+table.cvtable {
+  width: 100%;
+}
+
+table.cvtable th {
   width: 20%;
   text-align: left;
 }
 
-table.experience th,
-table.experience td {
+table.cvtable th,
+table.cvtable td {
   vertical-align: baseline;
 }
 
