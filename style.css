@@ -172,6 +172,11 @@ h2:not(:hover) a.section-link {
     display: none;
   }
 
+  .card .content {
+    margin-left: inherit;
+    margin-right: inherit;
+  }
+
   .bigme {
     background-position: left 65%;
   }  
@@ -220,7 +225,7 @@ h2:not(:hover) a.section-link {
     padding: 1rem;
     font-size: 2rem;
     cursor: pointer;
-    display: inherit!important;
+    display: inherit;
   }
 
   .navbar {
