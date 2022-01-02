@@ -324,8 +324,10 @@
     });
 
     document.addEventListener('click', event => {
-      navbar.style.visibility = "hidden";
-      visibility = false;
+      if (visibility) {
+        navbar.style.visibility = "hidden";
+        visibility = false;
+      }
     });
   </script>
 
