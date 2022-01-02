@@ -5,9 +5,7 @@
   TODO:
 
   - responsiveness (hamburger menu)
-  - printable version
   - version with contacts (shouldn't be public)
-  - improve descriptions (they are outdated and I don't like some of them anymore)
  -->
 
 <head>
@@ -26,7 +24,7 @@
     <div class="card bigme">
       <div class="navbar">
         <p>
-          <a class="download" href="#">Download CV</a>
+          <a class="download" href="cv.pdf">Download CV</a>
           <a href="#about">About</a>
           <a href="#technologies">Technologies</a>
           <a href="#experience">Experience</a>
@@ -38,15 +36,39 @@
       <div class="content">
         <h1>Giacomo d'Antonio</h1>
         <h3>Software Engineer</h3>
-        <div class="socials">
+        <div class="socials noprint">
+          <a href="https://github.com/giacomo-dantonio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://stackoverflow.com/users/785542/giacomo-dantonio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-stack-overflow"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/giacomo-d-antonio-97273227/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+
+        <div class="socials print">
           <a href="https://github.com/giacomo-dantonio">
             <i class="fab fa-github"></i>
+            github.com/giacomo-dantonio
           </a>
           <a href="https://stackoverflow.com/users/785542/giacomo-dantonio">
             <i class="fab fa-stack-overflow"></i>
+            stackoverflow.com/users/785542/giacomo-dantonio
           </a>
           <a href="https://www.linkedin.com/in/giacomo-d-antonio-97273227/">
             <i class="fab fa-linkedin"></i>
+            linkedin.com/in/giacomo-d-antonio-97273227
           </a>
         </div>
       </div>
@@ -71,7 +93,13 @@
     which means I like to reason about the code I write and prove logically
     that it works correctly.</p>
 
-    <p>I like 3D visualization, CAD, geometric algorithms, optimization, and scientific computing. I enjoy writing JavaScript, Rust and Webassembly, but I also work with many other technologies.</p>
+    <p>I have broad interests ranging from
+      CAD, Machine Learning, optimization, scientific computing,
+      3D visualization and computational geometry, to web development,
+      microservices and cloud computing.
+    </p>
+
+    <p>I've been working on engineering software since 2012.</p>
   </section>
 
   <section>
@@ -82,27 +110,33 @@
     </h2>
 
     <div class="technologies">
-      <span>3D</span>
-      <span>Agile</span>
-      <span><i class="devicon-cplusplus-plain"></i> C++</span>
-      <span><i class="devicon-csharp-plain"></i> C#</span>
-      <span>CAD</span>
-      <span>CAE</span>
-      <span>CI/CD</span>
-      <span>Databases</span>
-      <span>FEM</span>
-      <span><i class="devicon-haskell-plain"></i> Haskell</span>
-      <span><i class="devicon-javascript-plain"></i> JavaScript</span>
-      <span><i class="devicon-dotnetcore-plain"></i> .Net</span>
-      <span>Optimization</span>
-      <span><i class="devicon-python-plain"></i> Python</span>
-      <span><i class="devicon-react-original"></i> React</span>
-      <span><i class="devicon-redux-original"></i> Redux</span>
-      <span><i class="devicon-rust-plain"></i> Rust</span>
-      <span>SQL</span>
-      <span>TDD</span>
-      <span><i class="devicon-typescript-plain"></i> TypeScript</span>
-      <span>WebAssembly</span>
+      <div>ASP.Net</div>
+      <div><i class="devicon-cplusplus-plain"></i> C++</div>
+      <div><i class="devicon-csharp-plain"></i> C#</div>
+      <div>CAD</div>
+      <div>CAE</div>
+      <div>CI/CD</div>
+      <div>Databases</div>
+      <div><i class="devicon-docker-plain"></i> Docker</div>
+      <div>FEM</div>
+      <div><i class="devicon-haskell-plain"></i> Haskell</div>
+      <div>HOOPS Communicator</div>
+      <div>HOOPS Exchange</div>
+      <div><i class="devicon-javascript-plain"></i> JavaScript</div>
+      <div><i class="devicon-linux-plain"></i> Linux</div>
+      <div>Machine Learning</div>
+      <div><i class="devicon-dotnetcore-plain"></i> .Net</div>
+      <div>Optimization</div>
+      <div><i class="devicon-python-plain"></i> Python</div>
+      <div><i class="devicon-react-original"></i> React</div>
+      <div><i class="devicon-redux-original"></i> Redux</div>
+      <div><i class="devicon-rust-plain"></i> Rust</div>
+      <div>Scrum</div>
+      <div>SQL</div>
+      <div>TDD</div>
+      <div><i class="devicon-typescript-plain"></i> TypeScript</div>
+      <div><i class="devicon-vuejs-plain"></i>Vue.JS</div>
+      <div>WebAssembly</div>
     </div>
   </section>
   
@@ -121,16 +155,15 @@
         </th>
         <td>
           <h4>Software Engineer</h4>
-          <p>At Elise I am one of the <em>developers</em> of a CAD/CAE application
-            for generative engineering.
-            I am part of a Scrum team.
-            I work on integration of simulation and optimization solvers
-            and I write geometry algorithms.</p>
 
-          <p>I am also the <em>product owner</em> of our services
-            which include a customer portal and a license activation server.</p>
-            
-          <p>I write C#, C++, and some JavaScript and TypeScript.</p>
+          <p>At Elise I lead the <em>cloud services</em> team.
+            In addition to the management tasks I also develop
+            cloud microservices using C# with ASP.Net and Rust,
+            together with their front ends with TypeScript and Vue.JS.
+          </p>
+          <p>I also work on integration of <em>simulation</em> and
+            <em>optimization</em> solvers in our C# application
+            and on computational geometry algorithms in C++.</p>
         </td>
       </tr>
 
@@ -146,10 +179,8 @@
           with the React/Redux framework for the frontend.</p>
 
           <p>I was the product owner of the products <em>3D Visualization</em>,
-            <em>Variant management</em>, and <em>BOM/Virtual product.</em></p>
-          
-          <p>I was also manager of several agile development processes.
-            We were using an hybrid process between waterfall and agile.</p>
+            <em>Variant management</em>, and <em>BOM/Virtual product.</em>
+            I also managed the agile development processes for these products.</p>
         </td>
       </tr>
 
