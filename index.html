@@ -22,6 +22,9 @@
 <body>
   <header>
     <div class="card bigme">
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
       <div class="navbar">
         <p>
           <a class="download" href="cv.pdf">Download CV</a>
@@ -314,6 +317,24 @@
       </tr>
     </table>
   </section>
+
+  <script>
+    let visibility = false;
+    const hamburger = document.querySelector("div.hamburger");
+    const navbar = document.querySelector("div.navbar");
+
+    hamburger.addEventListener('click', event => {
+      navbar.style.visibility = visibility ? "hidden" : "inherit";
+      visibility = !visibility;
+  
+      event.stopPropagation();
+    });
+
+    document.addEventListener('click', event => {
+      navbar.style.visibility = "hidden";
+      visibility = false;
+    });
+  </script>
 
 </body>
 

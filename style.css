@@ -4,6 +4,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.hamburger,
 .print {
   display: none;
 }
@@ -44,7 +45,7 @@ h2 a {
   padding: 1rem 2rem;
 }
 
-.card .socials i {
+.card .socials a:not(:last-child) i {
   margin-right: 3vw;
 }
 
@@ -147,6 +148,11 @@ h2:not(:hover) a.section-link {
   .socials {
     font-size: 5vw;
   }
+
+  .card .content {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media print {
@@ -186,17 +192,52 @@ h2:not(:hover) a.section-link {
     font-size: 1.5vw;
   }
 
-  .socials {
+  .card .socials {
     font-size: 1rem;
     text-align: left;
 
     display: inline-grid;
   }
 
+  .card .socials a i {
+    margin-right: 1em!important;
+  }
+  
   .technologies > div {
     display: inline-block;
     margin: 0;
     padding: 3px 6px;
     border-style: none;
   }  
+}
+
+@media (max-width: 970px) {
+  /* hamburger for small width screens */
+
+  .hamburger {
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    display: inherit!important;
+  }
+
+  .navbar {
+    margin-right: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #00449e;
+    position: absolute;
+    top: 4rem;
+    visibility: hidden;
+  }
+
+  .navbar a.download {
+    border-style: none!important;
+  }
+
+  .navbar a {
+    display: block;
+    padding: .5rem 1rem!important;
+  }
 }
