@@ -10,18 +10,18 @@ body {
 }
 
 .card a,
-h2 a {
+h3 a {
   color: inherit;
   text-decoration: inherit;
 }
 
 .card {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(14, 16, 60, 0.8);
   height: 100vh;
 
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .card .content {
@@ -32,17 +32,18 @@ h2 a {
 .bigme {
   background-image: url('img/cover.jpg');
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: right bottom;
   background-size: cover !important;
 }
 
 .card .navbar {
-  text-align: right;
-  line-height: 2rem;
+  text-align: left;
+  line-height: 32px;
+  padding: 5px 15px;
 }
 
 .card .navbar a {
-  padding: 1rem 2rem;
+  padding: 16px 32px;
 }
 
 .card .socials a:not(:last-child) i {
@@ -57,6 +58,7 @@ h2 a {
 section {
   padding: 0px 30px;
 
+  margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
 
@@ -68,7 +70,8 @@ section h1,
 section h2,
 section h3,
 section h4 {
-  color: #00449e;
+  color: rgba(14, 16, 60, 1);
+  margin: 5px 0px
 }
 
 .technologies > div {
@@ -93,8 +96,24 @@ table.cvtable td {
   vertical-align: baseline;
 }
 
-h2:not(:hover) a.section-link {
+h3:not(:hover) a.section-link {
   visibility: hidden;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
 }
 
 @media (orientation: landscape) {
@@ -103,24 +122,8 @@ h2:not(:hover) a.section-link {
     width: 60vw;
   }
 
-  h1 {
-    font-size: 4vw;
-  }
-  
-  h2 {
-    font-size: 3vw;
-  }
-  
-  h3 {
-    font-size: 2vw;
-  }
-
-  h4 {
-    font-size: 1.5vw;
-  }
-
   .socials {
-    font-size: 3vw;
+    font-size: 32px;
   }
 
   section {
@@ -129,22 +132,6 @@ h2:not(:hover) a.section-link {
 }
 
 @media (orientation: portrait) {
-  h1 {
-    font-size: 8vw;
-  }
-
-  h2 {
-    font-size: 6vw;
-  }
-
-  h3 {
-    font-size: 4vw;
-  }
-
-  h4 {
-    font-size: 2vw;
-  }
-
   .socials {
     font-size: 5vw;
   }
@@ -164,7 +151,7 @@ h2:not(:hover) a.section-link {
     display: none!important;
   }
 
-  .card { 
+  .card {
     height: 25vh;
   }
 
@@ -173,32 +160,21 @@ h2:not(:hover) a.section-link {
   }
 
   .card .content {
-    margin-left: inherit;
-    margin-right: inherit;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    margin: 15px;
+  }
+
+  .socials i {
+    width: 16px;
   }
 
   .bigme {
     background-position: left 65%;
-  }  
-
-  h1 {
-    font-size: 5vw;
-  }
-
-  h2 {
-    font-size: 2.5vw;
-  }
-
-  h3 {
-    font-size: 2vw;
-  }
-
-  h4 {
-    font-size: 1.5vw;
   }
 
   .card .socials {
-    font-size: 1rem;
+    font-size: 16px;
     text-align: left;
 
     display: inline-grid;
@@ -207,23 +183,28 @@ h2:not(:hover) a.section-link {
   .card .socials a i {
     margin-right: 1em!important;
   }
-  
+
   .technologies > div {
     display: inline-block;
     margin: 0;
     padding: 3px 6px;
     border-style: none;
-  }  
+  }
+
+  .spacer {
+    height: 25px;
+    page-break-before: always;
+  }
 }
 
-@media (max-width: 970px) {
+@media (max-width: 1030px) {
   /* hamburger for small width screens */
 
   .hamburger {
     margin-right: 0.5rem;
     margin-top: 0.5rem;
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 16px;
     cursor: pointer;
     display: inherit;
   }
@@ -231,7 +212,7 @@ h2:not(:hover) a.section-link {
   .navbar {
     margin-right: 0.5rem;
     background-color: rgba(255, 255, 255, 0.8);
-    color: #00449e;
+    color: rgba(14, 16, 60, 1);
     position: absolute;
     top: 4rem;
     visibility: hidden;
