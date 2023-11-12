@@ -118,7 +118,8 @@ h4 {
 
 @media (orientation: landscape) {
   .content {
-    float: right;
+    position: absolute;
+    top: calc(50vh - 107px);
     width: 60vw;
   }
 
